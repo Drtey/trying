@@ -1,0 +1,18 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Id</th>
+      <!-- <th scope="col">Departamento</th>
+      <th scope="col">Email</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let profesores of profesores">
+        <tr>
+          <td>{{profesores.nombre}} {{profesores.papellido}} {{profesores.sapellido}}</td>
+          <td>{{profesores.id}}</td>
+        </tr>
+    </ng-container>
+  </tbody>
+</table>

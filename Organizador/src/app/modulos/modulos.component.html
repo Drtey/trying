@@ -1,0 +1,21 @@
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Codigo</th>
+        <th scope="col">Curso</th>
+        <th scope="col">Horas</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let modulos of modulos">
+          <tr>
+              <td>{{modulos.nombre}}</td>
+              <td>{{modulos.codigo}}</td>
+              <td>{{modulos.curso}}</td>
+              <td>{{modulos.horas}}</td>
+          </tr>
+      </ng-container>
+    </tbody>
+</table>

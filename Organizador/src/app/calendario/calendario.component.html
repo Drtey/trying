@@ -1,0 +1,22 @@
+<!-- <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover"> -->
+  <table id="tablaexamenes" class="table">
+  <thead>
+    <tr>
+      <th scope="col">Módulo</th>
+      <th scope="col">Profesor</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Hora</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let examenes of examenes">
+        <tr>
+            <td>{{examenes.mod_id}}</td>
+            <td>{{examenes.prof_id}}</td>
+            <td>{{examenes.fecha}}</td>
+            <td>{{examenes.hora}}</td>
+        </tr>
+    </ng-container>
+  </tbody>
+</table>

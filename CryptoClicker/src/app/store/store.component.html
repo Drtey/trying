@@ -1,0 +1,42 @@
+<div class="name">
+    <h4>Store</h4>
+</div>
+
+<div class="row" id="card">
+    <div class="col-sm">
+        <img (click)="buyTech(0)" src="../../assets/card.png">
+    </div>
+    <div class="col-sm">
+        <p>Tienes: {{getNumberOfTech(0)}}</p>
+        <p>Precio: {{getPriceOfTech(0)}}</p>
+    </div>
+    <div class="col-sm">
+        <p>Velocidad de {{getHashRateOfTech(0)}} hash rate por segundo</p>
+    </div>
+</div>
+
+<div class="row" id="rig">
+    <div class="col-sm">
+        <img (click)="buyTech(1)" src="../../assets/rig.png">
+    </div>
+    <div class="col-sm">
+        <p>Tienes: {{getNumberOfTech(1)}}</p>
+        <p>Precio: {{getPriceOfTech(1)}}</p>
+    </div>
+    <div class="col-sm">
+        <p>Velocidad de {{getHashRateOfTech(1)}} hash rate por segundo</p>
+    </div>
+</div>
+
+<div class="row" id="farm">
+    <div class="col-sm">
+        <img (click)="buyTech(2)" src="../../assets/farm.png">
+    </div>
+    <div class="col-sm">
+        <p>Tienes: {{getNumberOfTech(2)}}</p>
+        <p>Precio: {{getPriceOfTech(2)}}</p>
+    </div>
+    <div class="col-sm">
+       <p>Velocidad de {{getHashRateOfTech(2)}} hash rate por segundo</p>
+    </div>
+</div>
