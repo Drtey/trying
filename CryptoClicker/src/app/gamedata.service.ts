@@ -12,22 +12,22 @@ export class GamedataService {
 
   private techs = [
     {
-      name: "Graphic Card",
-      hashrate: 30,
+      name: "Graphics Card",
+      hashrate: 1,
       number: 0,
-      price: 10
+      price: 150
     },
     {
       name: "Mining Rig",
-      hashrate: 600,
+      hashrate: 10,
       number: 0,
-      price: 100
+      price: 1000
     },
     {
       name: "Mining Farm",
-      hashrate: 2000,
+      hashrate: 100,
       number: 0,
-      price: 1000
+      price: 10000
     }
   ]
 
@@ -36,7 +36,7 @@ export class GamedataService {
    }
 
   public addClick() {
-    this.cryptos += this.cryptosPerClick
+    this.cryptos += this.cryptosPerClick * 10
   }
 
   public buyTech(typeOfTech: number) {

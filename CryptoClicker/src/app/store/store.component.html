@@ -4,7 +4,9 @@
 
 <div class="row" id="card">
     <div class="col-sm">
-        <img (click)="buyTech(0)" src="../../assets/card.png">
+      
+        <img [ngStyle]="{'filter': 'brightness(' + light + ')'}" (click)="buyTech(0)" src="../../assets/card.png">
+      
     </div>
     <div class="col-sm">
         <p>Tienes: {{getNumberOfTech(0)}}</p>
@@ -17,7 +19,7 @@
 
 <div class="row" id="rig">
     <div class="col-sm">
-        <img (click)="buyTech(1)" src="../../assets/rig.png">
+        <img [ngStyle]="{'filter': 'brightness(' + light2 + ')'}" id="rigs" (click)="buyTech(1)" src="../../assets/rig.png">
     </div>
     <div class="col-sm">
         <p>Tienes: {{getNumberOfTech(1)}}</p>
@@ -30,7 +32,7 @@
 
 <div class="row" id="farm">
     <div class="col-sm">
-        <img (click)="buyTech(2)" src="../../assets/farm.png">
+        <img [ngStyle]="{'filter': 'brightness(' + light3 + ')'}" id="farms" (click)="buyTech(2)" src="../../assets/farm.png">
     </div>
     <div class="col-sm">
         <p>Tienes: {{getNumberOfTech(2)}}</p>

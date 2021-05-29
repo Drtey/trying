@@ -23,12 +23,45 @@ img {
     display:block;
     margin:auto;
     transition: transform .2s;
+    
+}
+
+#graphics {
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display:block;
+    margin:auto;
+    transition: transform .2s;
+    filter: var(change);
+}
+
+#rigs {
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display:block;
+    margin:auto;
+    transition: transform .2s;
+    filter: brightness(0.3);
+}
+
+#farms {
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display:block;
+    margin:auto;
+    transition: transform .2s;
     filter: brightness(0.3);
 }
 
 img:hover {
     transform: scale(1.4);
-    filter: brightness(1);
+    
 }
 
 img:active {
