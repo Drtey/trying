@@ -32,11 +32,16 @@ export class GamedataService {
   ]
 
   constructor() {
-    let reloj = setInterval(this.oneSecond,1000)
+    
    }
 
   public addClick() {
     this.cryptos += this.cryptosPerClick * 10
+  }
+
+  public showClick() {
+      let clicks = this.cryptosPerClick * 10 + this.totalTech()
+    return clicks
   }
 
   public buyTech(typeOfTech: number) {
@@ -91,5 +96,8 @@ export class GamedataService {
     console.log(this.HashRate)
   }
 
+  totalTech() {
+    return this.getNumberOfTech(0) + this.getNumberOfTech(1) + this.getNumberOfTech(2)
+  }
 
 }

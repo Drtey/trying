@@ -21,4 +21,8 @@ export class ScoreComponent implements OnInit {
     return this.game.getHashRate()
   }
 
+  getshowClick() {
+    return this.game.showClick()
+  }
+
 }
