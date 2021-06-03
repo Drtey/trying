@@ -1,1 +1,9 @@
-<p>carrito works!</p>
+<div id="h2">
+    <h2>Mi carrito:</h2>
+</div>
+<div class="row row-cols-md-5">
+    <ng-container *ngFor="let pieza of getCarrito()">
+        <app-comprado [pieza]="pieza"></app-comprado>
+    </ng-container>
+</div>
+

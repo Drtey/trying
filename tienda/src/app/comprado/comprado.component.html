@@ -1,0 +1,18 @@
+<div class="card text-center mb-2 mr-2" id="card">
+    <img src="{{pieza.imagen}}" class="card-img-top">
+    <div class="card-body" id="desc">
+        <h5 class="card-title">{{pieza.nombre}}</h5>
+        <p class="card-text">{{pieza.precio}} €</p>
+        <a [routerLink]="['/pieza',pieza.id]">Detalles</a>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" (click)="buyPieza(pieza)" class="btn btn-outline-light">Comprar</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" (click)="deletePieza(pieza)" class="btn btn-outline-light">Borrar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  

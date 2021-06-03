@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { findIndex } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,16 +10,16 @@ export class CarritoService {
 
   constructor() { }
 
-  addPieza(pieza) {
+  buyPieza(pieza) {
     this.carrito.push(pieza)
   }
 
-  deletePelicula( pelicula ) {
-    this.carrito = this.carrito.filter( pieza => pieza.id != pieza.id)
+  deletePieza(pieza) {
+    let index = this.carrito.indexOf(pieza)
+    this.carrito.splice(index,1)
   }
 
   getCarrito() {   
     return this.carrito
   }
-
 }

@@ -1,1 +1,13 @@
-<p>pieza works!</p>
+<div class="card text-center mb-2 mr-2" id="card">
+    <img src="{{pieza.imagen}}" class="card-img-top">
+    <div class="card-body" id="desc">
+        <h5 class="card-title">{{pieza.nombre}}</h5>
+        <p class="card-text">{{pieza.precio}} €</p>
+        <a [routerLink]="['/pieza',pieza.id]">Detalles</a>
+        <br>
+        <ng-container *ngIf="pieza.stock">
+            <button type="button" (click)="buyPieza(pieza)" class="btn btn-outline-light">Comprar</button>
+        </ng-container>
+    </div>
+  </div>
+  

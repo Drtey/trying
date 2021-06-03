@@ -1,12 +1,16 @@
 li:hover{
-    background-color: #373E44;
+    background-color: #ffffff;
 }
 
-#navbarNav{
-    padding-left: 100px;
+a:hover{
+    color: black;
 }
 
-#buscar {
-    padding-left: 100px;
-    width: 50%;
+a {
+    color: white;
+}
+
+nav {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }

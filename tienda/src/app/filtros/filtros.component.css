@@ -1,0 +1,7 @@
+label, th, td, option {
+    color: white;
+}
+
+option {
+    background-color: rgb(37, 37, 37);
+}

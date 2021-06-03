@@ -1,0 +1,15 @@
+<div *ngIf="pieza$ | async as pieza">
+    <div>
+    <h2>{{ pieza.nombre }} <button (click)="gotoCatalogo()" class="btn btn-outline-light">Volver al catálogo</button></h2>
+    <div class="row">
+        <div class="col-sm">
+            <img src="{{pieza.imagen}}" class="card-img-top">
+        </div>
+        <div class="col-sm">
+            <p>Id: {{ pieza.id }}</p>
+            <p>Nombre: {{ pieza.nombre }}</p>
+        </div>
+    </div>
+
+</div>
+  

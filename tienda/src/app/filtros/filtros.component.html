@@ -1,1 +1,51 @@
-<p>filtros works!</p>
+<div class="container">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr><th>Pieza</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>
+            <div class="form-group">
+            <input #patron type="text" class="form-control"
+                    id="pieza" placeholder="Nombre de la pieza" (keyup)="cambiosPatron(patron.value)">
+            </div>
+        </td></tr>
+        </tbody>
+    </table>
+    <table id="fabFilters" class="table table-striped">
+        <thead class="thead-dark">
+        <tr><th>Categorias</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label for="catList">Elige un fabricante</label>
+                        <select #cat class="form-control" id="catList" (change)="cambioCategoria(cat.value)">
+                            <option value="0">(Elige una categoria)</option>
+                            <!-- RELLENAR CON UN LISTADO DE TODOS LOS FABRICANTES -->
+                            <option *ngFor="let categoria of categorias"
+                                    value="{{categoria.id}}">
+                                    {{categoria.id}}
+                            </option>
+                            
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="cat1" checked>
+                        <label class="form-check-label" for="cat1">Categoria1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="cat2" checked>
+                        <label class="form-check-label" for="cat2">Categoria2</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="cat3" checked>
+                        <label class="form-check-label" for="cat3">Categoria3</label>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" id="resetFilters">Borrar filtros</button>
+</div>

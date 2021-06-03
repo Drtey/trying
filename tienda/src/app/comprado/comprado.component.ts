@@ -2,14 +2,13 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CarritoService} from '../carrito.service';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
-
 @Component({
-  selector: 'app-pieza',
-  templateUrl: './pieza.component.html',
-  styleUrls: ['./pieza.component.css']
+  selector: 'app-comprado',
+  templateUrl: './comprado.component.html',
+  styleUrls: ['./comprado.component.css']
 })
-export class PiezaComponent implements OnInit {
-
+export class CompradoComponent implements OnInit {
+  
   @Input() pieza
 
   constructor(

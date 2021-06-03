@@ -14,7 +14,12 @@ export class DatosService {
     return this.http.get(this.url + "piezas")
   }
 
+  getPieza(id: number | string) {
+    return this.http.get(this.url + "piezas/" + id)
+  }
+
   getCategorias() {
     return this.http.get(this.url + "categorias")
   }
+
 }

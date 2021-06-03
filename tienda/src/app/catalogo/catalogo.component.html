@@ -1,1 +1,16 @@
-<p>catalogo works!</p>
+<div class="row">
+    <div class="col-lg-3">
+        <app-filtros (PatronCambiado)="nuevoPatron($event)"
+                    (CambioCategoria)="nuevaCategoria($event)">
+        </app-filtros>
+    </div>
+    <div id="modelos" class="col-lg">
+        <!-- RELLENAR CON UN LISTADO DE TODOS LOS MODELOS -->
+        <div *ngIf="loading">loading...</div>
+        <div class="row row-cols-md-3" id="divpiezas">
+            <app-pieza  *ngFor="let pieza of piezas | patron:patron | categoria:cat" [pieza]="pieza">
+            </app-pieza>
+        </div>
+    </div>
+</div>   
+   
