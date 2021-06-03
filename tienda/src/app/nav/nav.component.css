@@ -1,0 +1,12 @@
+li:hover{
+    background-color: #373E44;
+}
+
+#navbarNav{
+    padding-left: 100px;
+}
+
+#buscar {
+    padding-left: 100px;
+    width: 50%;
+}
