@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarritoComponent } from './carrito/carrito.component';
-import { BuscadorComponent } from './buscador/buscador.component';
 import { NavComponent } from './nav/nav.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { PiezaComponent } from './pieza/pieza.component';
@@ -28,7 +27,6 @@ const rutas = [
   declarations: [
     AppComponent,
     CarritoComponent,
-    BuscadorComponent,
     NavComponent,
     CatalogoComponent,
     PiezaComponent,
