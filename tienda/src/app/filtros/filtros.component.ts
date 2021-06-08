@@ -31,4 +31,10 @@ export class FiltrosComponent implements OnInit {
     this.CambioCategoria.emit(idCat)
   }
 
+  borrarFiltros(){
+    let idCat = "0"
+    let patron = ""
+    this.CambioCategoria.emit(idCat)
+    this.PatronCambiado.emit(patron)
+  }
 }
