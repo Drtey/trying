@@ -5,7 +5,6 @@
         </app-filtros>
     </div>
     <div id="modelos" class="col-lg">
-        <!-- RELLENAR CON UN LISTADO DE TODOS LOS MODELOS -->
         <div *ngIf="loading">loading...</div>
         <div class="row row-cols-md-3" id="divpiezas">
             <app-pieza  *ngFor="let pieza of piezas | patron:patron | categoria:cat" [pieza]="pieza">
