@@ -1,0 +1,28 @@
+{
+    "clientes":[
+        {
+            "nombre":"javier",
+            "id":1,
+            "servicio":1
+        },
+
+        {
+            "nombre":"prueba1",
+            "id":2,
+            "servicio":2
+        }
+    ],   
+    
+    "servicios":[
+        {
+            "nombre":"antivirus",
+            "tipo":1
+        },
+
+        {
+            "nombre":"dominio",
+            "tipo":2
+        }
+    ]
+}
+
